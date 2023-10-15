@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Mono:wght@400;500;700&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-size: 1rem;
+  font-family: 'Fira Mono', monospace;
+  background-color: #efeee5;
+}
+
+.container {
+  position: absolute;
+  background-color: #1b191b;
+  width: min(90%, 500px);
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 4em 2em;
+  border-radius: 0.5em;
+}
+
+button {
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+.section-container {
+  display: flex;
+  gap: 1em;
+  justify-content: center;
+}
+
+.btn {
+  padding: 1em 2em;
+  border-radius: 0.5em;
+  background-color: #3d3941;
+  color: white;
+}
+
+.btn-focus {
+  background-color: #efeee5;
+  color: black;
+}
+
+.time-btn-container {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  color: white;
+  font-size: 5em;
+  font-weight: 600;
+}
+
+.btn-container {
+  display: flex;
+  justify-content: center;
+  gap: 2em;
+}
+#btn-start,
+#btn-pause {
+  padding: 1em 2em;
+  border-radius: 0.5em;
+  cursor: pointer;
+  background-color: white;
+}
+
+#btn-reset {
+  background-color: transparent;
+  border: none;
+  outline: none;
+  color: white;
+  font-size: 2em;
+}
+
+.hide {
+  display: none;
+}
+
+.show {
+  display: block;
+}
+
