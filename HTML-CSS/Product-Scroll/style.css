@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&family=Roboto:ital,wght@0,300;0,400;0,500;0,700;0,900;1,300;1,400;1,500;1,700&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: white;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1rem;
+}
+
+.product {
+    padding: 3em;
+}
+.product-heading {
+    text-align: center;
+}
+.section-top-para {
+    font-size: 1.1rem;
+    text-transform: uppercase;
+    font-weight: 400;
+    color: #686057;
+    margin-bottom: -40px;
+}
+.section-next-para {
+    font-weight: 500;
+    font-size: 4rem;
+    margin-bottom: -40px;
+}
+.product-card {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow: auto;
+    gap: 1rem;
+    align-items: center;
+    justify-content: center;
+    transition: 250ms;
+}
+.product-card::-webkit-scrollbar {
+    display: none;
+    height: 0.2em;
+}
+.product-card:hover::-webkit-scrollbar {
+    display: block;
+}
+.product-card::-webkit-scrollbar-track {
+    background-color: transparent;
+}
+.product-card::-webkit-scrollbar-thumb {
+    background-color: #6e6e6e;
+}
+.product-items {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    margin-top: 5em;
+}
+.product-items img {
+    padding: 20px;
+    background-color: white;
+    margin-bottom: 20px;
+}
+.product-items a {
+    text-decoration: none;
+    color: black;
+    text-align: center;
+    font-size: 1.05rem;
+    transition: 250ms;
+}
+.product-items a:hover {
+    transform: scale(1.1);
+}
+.product-items p {
+    text-align: center;
+}
