@@ -10,7 +10,7 @@ let set;
 let active = "focus";
 let count = 59;
 let paused = true;
-let minCount = 24;
+let minCount = 44;
 time.textContent = `${minCount + 1}:00`;
 
 const appendZero = (value) => {
@@ -30,7 +30,7 @@ reset.addEventListener(
         minCount = 4;
         break;
       default:
-        minCount = 24;
+        minCount = 44;
         break;
     }
     count = 59;
@@ -48,7 +48,7 @@ focusButton.addEventListener("click", () => {
   removeFocus();
   focusButton.classList.add("btn-focus");
   pauseTimer();
-  minCount = 24;
+  minCount = 44;
   count = 59;
   time.textContent = `${minCount + 1}:00`;
 });

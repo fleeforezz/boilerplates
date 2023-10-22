@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Fira+Mono:wght@400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 * {
   box-sizing: border-box;
@@ -8,13 +8,14 @@ body {
   margin: 0;
   padding: 0;
   font-size: 1rem;
-  font-family: 'Fira Mono', monospace;
-  background-color: #efeee5;
+  font-family: 'Work Sans', sans-serif;
+  background-color: #fff2f2;
+  overflow: hidden;
 }
 
 .container {
   position: absolute;
-  background-color: #1b191b;
+  /* background-color: #1b191b; */
   width: min(90%, 500px);
   top: 50%;
   left: 50%;
@@ -32,49 +33,53 @@ button {
 .section-container {
   display: flex;
   gap: 1em;
+  flex-wrap: wrap;
   justify-content: center;
 }
 
 .btn {
   padding: 1em 2em;
   border-radius: 0.5em;
-  background-color: #3d3941;
+  background-color: #471515;
   color: white;
+  border: 2px solid #471515;
 }
 
 .btn-focus {
-  background-color: #efeee5;
-  color: black;
+  background-color: #ffadad;
+  color: #471515;
+  font-weight: 700;
 }
 
 .time-btn-container {
   display: flex;
   flex-direction: column;
   text-align: center;
-  color: white;
+  color: #471515;
   font-size: 5em;
   font-weight: 600;
 }
 
 .btn-container {
   display: flex;
+  gap: 0.5em;
+  flex-wrap: wrap;
   justify-content: center;
-  gap: 2em;
 }
 #btn-start,
 #btn-pause {
-  padding: 1em 2em;
-  border-radius: 0.5em;
+  padding: 1.5em;
+  border-radius: 1em;
   cursor: pointer;
-  background-color: white;
+  background-color: #ffadad;
 }
 
 #btn-reset {
   background-color: transparent;
   border: none;
   outline: none;
-  color: white;
-  font-size: 2em;
+  color: #ffadad;
+  font-size: 0.4em;
 }
 
 .hide {
@@ -84,4 +89,3 @@ button {
 .show {
   display: block;
 }
-
