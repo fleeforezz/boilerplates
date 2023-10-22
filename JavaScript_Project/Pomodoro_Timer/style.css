@@ -10,14 +10,12 @@ body {
   font-size: 1rem;
   font-family: 'Work Sans', sans-serif;
   background-color: #fff2f2;
-  overflow: hidden;
 }
 
 .container {
   position: absolute;
-  /* background-color: #1b191b; */
   width: min(90%, 500px);
-  top: 50%;
+  top: 45%;
   left: 50%;
   transform: translate(-50%, -50%);
   padding: 4em 2em;
@@ -32,7 +30,7 @@ button {
 
 .section-container {
   display: flex;
-  gap: 1em;
+  gap: 2em;
   flex-wrap: wrap;
   justify-content: center;
 }
@@ -54,9 +52,10 @@ button {
 .time-btn-container {
   display: flex;
   flex-direction: column;
+  margin-top: 0.5em;
   text-align: center;
   color: #471515;
-  font-size: 5em;
+  font-size: 7em;
   font-weight: 600;
 }
 
@@ -64,6 +63,7 @@ button {
   display: flex;
   gap: 0.5em;
   flex-wrap: wrap;
+  margin-top: 0.5em;
   justify-content: center;
 }
 #btn-start,
