@@ -108,9 +108,14 @@ startBtn.addEventListener("click", () => {
   }
 });
 
-// Media Function
+// Get Media Info
 const typingSound = new Audio('./music/typingSound.mp3');
 const cherryBlossom = new Audio('./music/cherryBlossom.mp3');
+
+const songs = [
+  { ele: typingSound, audioName: 'ASMR Typing Sound' },
+  { ele: cherryBlossom, audioName: 'Cherry Blossom Lofi' },
+];
 
 // Selecting elements
 const prevBtn = document.querySelector('.previous');
@@ -118,11 +123,6 @@ const playBtn = document.querySelector('.play-pause');
 const nextBtn = document.querySelector('.next');
 const songName = document.querySelector('.song-name');
 const playPauseIcon = document.querySelector('#play-pause-icon');
-
-const songs = [
-  { ele: typingSound, audioName: 'ASMR Typing Sound' },
-  { ele: cherryBlossom, audioName: 'Cherry Blossom Lofi' },
-];
 
 for (const song of songs) {
   song.ele.addEventListener('ended', () => {
