@@ -69,6 +69,8 @@ button {
 #btn-start,
 #btn-pause {
   padding: 1.5em;
+  font-weight: 600;
+  font-size: 1rem;
   border-radius: 1em;
   cursor: pointer;
   background-color: #ffadad;
