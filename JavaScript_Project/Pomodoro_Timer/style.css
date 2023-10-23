@@ -91,3 +91,25 @@ button {
 .show {
   display: block;
 }
+
+/* Media Button */
+.controls {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.now-playing {
+  font-weight: bold;
+  color: #471515;
+}
+.media-btn {
+  background-color: transparent;
+  color: #471515;
+  font-size: 1.5rem;
+  border: none;
+  cursor: pointer;
+}
+.media-btn:hover {
+  opacity: 70%;
+}

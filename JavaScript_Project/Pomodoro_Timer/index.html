@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="style.css">
   <script src="https://kit.fontawesome.com/5a0bb5d886.js" crossorigin="anonymous"></script>
+  <script src="https://unpkg.com/@phosphor-icons/web"></script>
   <title>Pomodoro Timer</title>
 </head>
 <body>
@@ -29,10 +30,21 @@
   </div>
 
   <!-- Music Player -->
-  <div class="content">
-    <div class="top-bar">
-      <span>Now Playing</span>
-    </div>
+  <div class="controls">
+    <p class="playing">
+      <span class="now-playing">Now playing-</span> <span class="song-name"></span>
+    </p>
+    <media-control>
+      <button class="media-btn previous">
+        <i class="ph ph-skip-back"></i>
+      </button>
+      <button class="media-btn play-pause">
+        <i  id="play-pause-icon" class="ph ph-pause"></i>
+      </button>
+      <button class="media-btn next">
+        <i class="ph ph-skip-forward"></i>
+      </button>
+    </media-control>
   </div>
 
   <script src="main.js"></script>
