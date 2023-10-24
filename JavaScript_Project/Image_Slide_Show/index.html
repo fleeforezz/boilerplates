@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Image Slide Show</title>
+</head>
+<body>
+    <div class="container">
+        <div class="mySlides fade">
+            <div class="numbertext">1 / 3</div>
+            <img src="./image/img_snow_wide.jpg" style="width: 100%;">
+            <div class="text">Caption Text</div>
+        </div>
+        <div class="mySlides fade">
+            <div class="numbertext">2 / 3</div>
+            <img src="./image/img_nature_wide.jpg" style="width: 100%;">
+            <div class="text">Caption Two</div>
+        </div>
+        <div class="mySlides fade">
+            <div class="numbertext">3 / 3</div>
+            <img src="./image/img_mountains_wide.jpg" style="width: 100%;">
+            <div class="text">Caption Three</div>
+        </div>
+
+        <a onclick="plusSlides(-1)" class="prev"><</a>
+        <a onclick="plusSlides(1)" class="next">></a>
+    </div>
+
+    <br>
+
+    <div style="text-align: center;">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+</html>
