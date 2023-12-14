@@ -43,3 +43,11 @@ body {
   z-index: 2;
   backdrop-filter: blur(12vmax);
 }
+
+.welcome {
+  position: absolute;
+  color: white;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
